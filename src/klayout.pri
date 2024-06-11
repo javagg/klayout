@@ -135,7 +135,9 @@ equals(HAVE_RUBY, "1") {
   include($$BITS_PATH/zlib/zlib.pri)
 } else {
   !msvc {
-    LIBS += -lz
+    !wasm {
+      LIBS += -lz
+    }
   }
 }
 

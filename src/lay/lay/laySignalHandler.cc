@@ -43,7 +43,9 @@
 #  endif
 #else
 #  include <dlfcn.h>
-#  include <execinfo.h>
+#  ifndef Q_OS_WASM
+#    include <execinfo.h>
+#  endif
 #  include <unistd.h>
 #endif
 
@@ -290,7 +292,11 @@ void signal_handler (int signo, siginfo_t *si, void *)
 
   bool can_resume = (signo != SIGILL);
 
+#ifndef Q_OS_WASM
   size_t nptrs = backtrace (array, sizeof (array) / sizeof (array[0]));
+#else
+  size_t nptrs = 0;
+#endif
 
   std::string text;
   text += tl::sprintf ("Signal number: %d\n", signo);

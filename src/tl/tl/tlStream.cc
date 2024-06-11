@@ -29,7 +29,12 @@
 #include <sys/stat.h>
 #include <stdio.h>
 #include <errno.h>
-#include <zlib.h>
+#include <QtSystemDetection>
+#ifdef Q_OS_WASM
+#  include <QtZlib/zlib.h>
+#else
+#  include <zlib.h>
+#endif
 #ifdef _WIN32 
 #  include <io.h>
 #else

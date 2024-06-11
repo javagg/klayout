@@ -27,7 +27,12 @@
 
 #include <algorithm>
 
-#include <zlib.h>
+#include <QtSystemDetection>
+#ifdef Q_OS_WASM
+#  include <QtZlib/zlib.h>
+#else
+#  include <zlib.h>
+#endif
 
 namespace tl
 {
