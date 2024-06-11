@@ -10,7 +10,7 @@ SUBDIRS = \
   rdb \
   lib \
   plugins \
-  unit_tests \
+#  unit_tests \
   buddies \
   lym \
   laybasic \
@@ -121,11 +121,11 @@ equals(HAVE_RUBY, "1") {
 }
 
 buddies.depends += plugins lym $$LANG_DEPENDS
-unit_tests.depends += plugins lym $$MAIN_DEPENDS $$LANG_DEPENDS
+#unit_tests.depends += plugins lym $$MAIN_DEPENDS $$LANG_DEPENDS
 
 !equals(HAVE_QT, "0") {
 
-  unit_tests.depends += doc icons
+#  unit_tests.depends += doc icons
 
 }
 

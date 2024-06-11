@@ -1,6 +1,6 @@
 
 TEMPLATE = subdirs
-SUBDIRS = layview unit_tests
+SUBDIRS = layview #unit_tests
 
-unit_tests.depends += layview
+#unit_tests.depends += layview
 

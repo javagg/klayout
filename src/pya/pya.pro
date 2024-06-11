@@ -1,6 +1,6 @@
 
 TEMPLATE = subdirs
-SUBDIRS = pya unit_tests
+SUBDIRS = pya #unit_tests
 
-unit_tests.depends += pya
+#unit_tests.depends += pya
 

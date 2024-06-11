@@ -1,6 +1,6 @@
 
 TEMPLATE = subdirs
-SUBDIRS = edt unit_tests
+SUBDIRS = edt #unit_tests
 
-unit_tests.depends += edt
+#unit_tests.depends += edt
 

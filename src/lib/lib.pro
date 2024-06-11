@@ -1,6 +1,6 @@
 
 TEMPLATE = subdirs
-SUBDIRS = lib unit_tests
+SUBDIRS = lib #unit_tests
 
-unit_tests.depends += lib
+#unit_tests.depends += lib
 

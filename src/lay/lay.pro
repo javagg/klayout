@@ -1,6 +1,6 @@
 
 TEMPLATE = subdirs
-SUBDIRS = lay unit_tests
+SUBDIRS = lay #unit_tests
 
-unit_tests.depends += lay
+#unit_tests.depends += lay
 

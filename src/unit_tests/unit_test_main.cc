@@ -69,7 +69,7 @@
 
 //  required to force linking of the "rdb", "lib" and "drc" module 
 //  and the plugins/auxiliary modules (some in non-Qt case)
-#include "libForceLink.h"
+// #include "libForceLink.h"
 #include "rdbForceLink.h"
 #include "antForceLink.h"
 #include "imgForceLink.h"

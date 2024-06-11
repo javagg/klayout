@@ -32,7 +32,7 @@
 #include "pya.h"
 #include "gsi.h"
 #include "gsiExpression.h"
-#include "libForceLink.h"
+// #include "libForceLink.h"
 #include "rdbForceLink.h"
 #include "lymMacro.h"
 #include "lymMacroCollection.h"

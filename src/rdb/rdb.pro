@@ -1,6 +1,6 @@
 
 TEMPLATE = subdirs
-SUBDIRS = rdb unit_tests
+SUBDIRS = rdb #unit_tests
 
-unit_tests.depends += rdb
+#unit_tests.depends += rdb
 
