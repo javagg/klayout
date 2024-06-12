@@ -1,5 +1,5 @@
 
-DESTDIR = $$OUT_PWD
+DESTDIR = $$OUT_PWD/..
 
 TEMPLATE = app
 TARGET = fontgen

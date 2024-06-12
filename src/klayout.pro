@@ -11,7 +11,7 @@ SUBDIRS = \
   lib \
   plugins \
 #  unit_tests \
-  buddies \
+#  buddies \
   lym \
   laybasic \
   layview \
@@ -30,7 +30,7 @@ equals(HAVE_RUBY, "1") {
     klayout_main \
     lay \
     layui \
-    fontgen \
+#    fontgen \
     doc \
     icons \
 
@@ -85,7 +85,7 @@ equals(HAVE_RUBY, "1") {
   MAIN_DEPENDS += drc lvs
   drc.depends += rdb lym
   lvs.depends += drc
-  buddies.depends += drc lvs
+#  buddies.depends += drc lvs
 }
 
 !equals(HAVE_QT, "0") {
@@ -120,7 +120,7 @@ equals(HAVE_RUBY, "1") {
 
 }
 
-buddies.depends += plugins lym $$LANG_DEPENDS
+#buddies.depends += plugins lym $$LANG_DEPENDS
 #unit_tests.depends += plugins lym $$MAIN_DEPENDS $$LANG_DEPENDS
 
 !equals(HAVE_QT, "0") {

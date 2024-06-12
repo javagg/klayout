@@ -665,6 +665,8 @@ qmake_options=(
   KLAYOUT_VERSION="$KLAYOUT_VERSION"
   KLAYOUT_VERSION_DATE="$KLAYOUT_VERSION_DATE"
   KLAYOUT_VERSION_REV="$KLAYOUT_VERSION_REV"
+  QMAKE_CFLAGS="$CFLAGS"
+  QMAKE_CXXFLAGS="$CFLAGS"
 )
 
 # NOTE: qmake does not like include paths which clash with paths built into the compiler
