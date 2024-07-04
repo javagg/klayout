@@ -968,6 +968,14 @@ get_app_path_internal ()
   }
   return "";
 
+#elif defined (__EMSCRIPTEN__)
+
+  std::string pf = tl::sprintf ("/proc/%d/exe", getpid ());
+  if (tl::file_exists (pf)) {
+    return pf;
+  }
+  return "";
+
 #else
 
   std::string pf = tl::sprintf ("/proc/%d/exe", getpid ());
